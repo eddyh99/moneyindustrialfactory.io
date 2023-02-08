@@ -1,31 +1,39 @@
+</main>
+<!-- End #main -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+</div>
+<!-- End Wrapper -->
 
-        </main>
-        <!-- End #main -->
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+    <div id="credit">
+        <p><strong><span>Money Industrial Factory</span></strong></p>
+        <p>
+            <strong>
+                Jl. Bypass Ngurah Rai No. 21A, Benoa, square Bld 2nd floor, Kedongan, Jimbaran, Kuta-Bali
+            </strong>
+        </p>
+        <p>
+            (Head Holding PBS Online LLC 16192 Coastal Highway, Lewes Delaware 19958-9776)
+        </p>
     </div>
-    <!-- End Wrapper -->
-    
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-        <div id="credit">
-            <p>&copy; <?=date("Y")?> Copyright <strong><span>Money Industrial Factory</span></strong>. All Rights Reserved</p>
-            <p>
-            Jl. Bypass Ngurah Rai No. 21A, Benoa, square Bld 2nd floor, Kedongan, Jimbaran, Kuta-Bali
-            </p>            
-        </div>
-    </footer>
-    <!-- End Footer -->
+</footer>
+<!-- End Footer -->
 </body>
 <!--   Core JS Files   -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-27VLNYR010"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-27VLNYR010');
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-27VLNYR010');
 </script>
 
 <script src="<?=base_url()?>assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
@@ -47,38 +55,35 @@
 <script src="<?=base_url()?>assets/js/main.js"></script>
 
 <script>
-$(document).ready(function(){
-	// menu click event
-	$('.menuBtn').click(function() {
-		$(this).toggleClass('act');
-		if($(this).hasClass('act')) {
-		    $('.mainMenu').addClass('act');
-		}
-		else {
-		    $('.mainMenu').removeClass('act');
-		}
-	});
-	
+$(document).ready(function() {
+    // menu click event
+    $('.menuBtn').click(function() {
+        $(this).toggleClass('act');
+        if ($(this).hasClass('act')) {
+            $('.mainMenu').addClass('act');
+        } else {
+            $('.mainMenu').removeClass('act');
+        }
+    });
+
     $('.selectpicker').selectpicker();
 
 });
 
-$('.selectpicker').on("change",function(e){
+$('.selectpicker').on("change", function(e) {
     e.preventDefault();
     window.location = $(this).val();
 })
 
 
-$(".scrollto").on("click",function(){
-		$(".menuBtn").toggleClass('act');
-		if($(".menuBtn").hasClass('act')) {
-		    $('.mainMenu').addClass('act');
-		}
-		else {
-		    $('.mainMenu').removeClass('act');
-		}
+$(".scrollto").on("click", function() {
+    $(".menuBtn").toggleClass('act');
+    if ($(".menuBtn").hasClass('act')) {
+        $('.mainMenu').addClass('act');
+    } else {
+        $('.mainMenu').removeClass('act');
+    }
 })
-
 </script>
 <?php 
 if (isset($extra)){
