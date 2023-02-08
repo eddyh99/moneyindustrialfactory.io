@@ -1,0 +1,422 @@
+/**
+* Template Name: FlexStart - v1.4.0
+* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+:root {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    font-family: "Cera GR";
+    background-color:#fff;
+    color: #bb8f2e;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+  color: #946f1c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #946f1c;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cera GR";
+}
+
+.wrapper{
+    background-color:#000;    
+/*	max-width: 800px;*/
+    max-width: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------
+# Header & Footer
+--------------------------------------------------------------*/
+
+.header {
+	 background-color: #000;
+	 height: 110px;
+/*	 width:800px;*/
+     width: 100%;
+	 margin: 0 auto;
+}
+
+.header .logo img {
+    max-width:90px;
+    max-height:100px;
+    margin-left: 10px;
+    margin-top:5px;
+}
+
+.header > span {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #bb8f2e;
+    font-family: "Cera GR Bold";
+    margin-top: 10px;
+}
+
+.header > span > h1{
+    font-size: 50px;
+    font-family: "Avone Stencil";
+}
+
+.bs-searchbox > input {
+    font-size: medium;
+}
+
+.bootstrap-select .btn {
+    background-color: #000;
+    border: 1px solid #bb8f2e;
+    color: #bb8f2e;
+}
+
+.bootstrap-select .dropdown-menu {
+    margin: 15px 0 0;
+    background-color: #000;
+    border: 1px solid #bb8f2e;
+}
+
+.bootstrap-select .dropdown-menu a.dropdown-item {
+    color: #bb8f2e;
+}
+
+.bootstrap-select .dropdown-menu .active {
+    background-color: rgba(179,132,38,0.2);
+}
+
+.bootstrap-select .dropdown-menu a:hover {
+    background-color: rgba(179,132,38,0.5);
+}
+
+
+footer{
+    position:relative;
+	margin: 0 auto;
+	width:100%;
+/*    width:800px;*/
+    height:110px;
+    bottom:0;
+    background-color:#bb8f2e; 
+    color:#231f20;
+}
+
+footer #credit{
+    position: absolute;
+    bottom:0;
+    margin-left:10px;
+}
+
+/*--------------------------------------------------------------
+# Menu Hamburger
+--------------------------------------------------------------*/
+.menuBtn {
+	 height: 30px;
+	 width: 30px;
+	 position: absolute;
+	 right: 20px;
+	 top: 10px;
+	 z-index: 101;
+}
+ .menuBtn > span {
+	 background-color: #946f1c;
+	 border-radius: 1px;
+	 height: 2px;
+	 width: 100%;
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+	 margin: -1px 0 0 -15px;
+	 transition: height 100ms;
+}
+ .menuBtn > span:after, .menuBtn > span:before {
+	 content: '';
+	 background-color: #946f1c;
+	 border-radius: 1px;
+	 height: 2px;
+	 width: 100%;
+	 position: absolute;
+	 left: 50%;
+	 margin-left: -15px;
+	 transition: all 200ms;
+}
+ .menuBtn > span:after {
+	 top: -7px;
+}
+ .menuBtn > span:before {
+	 bottom: -7px;
+}
+ .menuBtn.act > span {
+	 height: 0;
+}
+ .menuBtn.act > span:after, .menuBtn.act > span:before {
+	 background-color: #087;
+	 top: 1px;
+}
+ .menuBtn.act > span:after {
+	 transform: rotate(45deg);
+}
+ .menuBtn.act > span:before {
+	 transform: rotate(-45deg);
+}
+
+/*--------------------------------------------------------------
+# main menu block
+--------------------------------------------------------------*/
+
+ .mainMenu {
+	 background-color: #fff;
+	 position: fixed;
+	 top: 0;
+	 z-index: 100;
+	 height: 100%;
+/*	 width: 800px;*/
+     width: 100%;
+	 display: table;
+	 text-align: center;
+	 opacity: 0;
+	 transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	 transform: scale(0);
+}
+ .mainMenu.act {
+	 opacity: 1;
+	 transform: scale(1);
+}
+ .mainMenu.act ul li {
+	 opacity: 1;
+	 transform: translateX(0);
+}
+ .mainMenu ul {
+	 display: table-cell;
+/*     display: block;*/
+	 vertical-align: middle;
+	 background-color:#bb8f2e;
+}
+ .mainMenu li {
+	 padding: 8px 0;
+	 transition: all 400ms 510ms;
+	 opacity: 0;
+     list-style: none;
+}
+ .mainMenu li:nth-child(odd) {
+	 transform: translateX(30%);
+}
+ .mainMenu li:nth-child(even) {
+	 transform: translateX(-30%);
+}
+ .mainMenu li:last-child {
+	 transform: none;
+}
+ .mainMenu a {
+	 color: #000;
+	 display: inline-block;
+	 font-size: 18px;
+}
+
+ .mainMenu a:hover {
+	 color: #fff;
+}
+
+ .mainMenu a.suBtn {
+	 color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #231f20;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/*
+section#services, section#about, section#anonemail, section#forgotpass{
+  padding: 150px 0;
+  overflow: hidden;
+}*/
+
+section {
+  padding: 150px 0;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #bb8f2e;
+}
+
+.box-mif {
+	color:#bb8f2e;
+	border:1px solid #bb8f2e;
+}
+
+.alert-box {
+	margin-left:5px;
+	margin-right:5px;
+}
+
+
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+
+.askme{
+	display:inline-block;
+	line-height: 45px;
+	background-color:#bb8f2e;
+	color:#231f20;
+	padding: 0 10px 0 10px ;
+}
+
+.regisnow{
+	display:inline-block;
+	width:100px;
+	line-height: 45px;
+	background-color:#231f20;
+	color:#bb8f2e;
+}
+
+.regisnow:hover{
+    color:white;    
+}
+
+.regismail{
+	display:inline-block;
+	width:100px;
+	line-height: 30px;
+	background-color:#bb8f2e;
+	color:#231f20;
+}
+
+
+.mif-left{
+  text-align: left;
+  padding-bottom: 40px;
+  color: #bb8f2e;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+a.link-help:hover{
+    color:white;
+}
+/*--------------------------------------------------------------
+# pswd info popup
+--------------------------------------------------------------*/
+
+#pswd_info {
+    display:none;
+}
+
+#pswd_info {
+    position:absolute;
+    width:350px;
+    padding:15px;
+    background:#fefefe;
+    font-size:.875em;
+    border-radius:5px;
+    box-shadow:0 1px 3px #ccc;
+    border:1px solid #ddd;
+    z-index:99;
+}
+
+
+#pswd_info::before {
+    content: "\25B2";
+    position:absolute;
+    top:-12px;
+    left:45%;
+    font-size:14px;
+    line-height:14px;
+    color:#ddd;
+    text-shadow:none;
+    display:block;
+}
+
+#pswd_info li{
+     list-style: none;
+}
+
+.invalid {
+    background:url(../images/invalid.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#ec3f41;
+}
+.valid {
+    background:url(../images/accept.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#3a7d34;
+}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Avone Stencil';
+    src: url('fonts/avonestencil.woff2') format('woff2'),
+         url('fonts/avonestencil.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera GR';
+    src: url('fonts/Cera-GR.woff2') format('woff2'),
+         url('fonts/Cera-GR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera GR Bold';
+    src: url('fonts/Cera-GR-Bold.woff2') format('woff2'),
+         url('fonts/Cera-GR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

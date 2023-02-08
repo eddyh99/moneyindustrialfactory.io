@@ -1,0 +1,340 @@
+/**
+* Template Name: FlexStart - v1.4.0
+* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+:root {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #bb8f2e;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    background-color:#fff;    
+	min-height: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i,
+span {
+    display: inline-block;
+}
+
+.green_piggy {
+    color: #40b449;
+}
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #bb8f2e;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar a.logo img {
+    max-width:50px;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+#sidebar.active .sidebar-header h3,
+#sidebar.active .CTAs {
+    display: none;
+}
+
+#sidebar.active .sidebar-header strong {
+    display: block;
+}
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+#sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar.active .dropdown-toggle::after {
+    top: auto;
+    bottom: 10px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #bb8f2e;
+}
+
+#sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #bb8f2e;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #000;
+    background: #fff;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #9a7023;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #3aa242;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+# Header & Footer
+--------------------------------------------------------------*/
+
+.header {
+	 background-color: #fff;
+	 margin-left:250px;
+	 height: 110px;
+     transition: all 0.3s;
+}
+
+.header.active {
+	 margin-left:80px;
+	 height: 110px;
+}
+
+.header .logo img {
+    max-width:90px;
+    max-height:100px;
+    margin-left: 10px;
+    margin-top:5px;
+}
+
+.header h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #000;;
+    font-family: "Cera GR Bold";
+    margin-top: 10px;
+}
+.header h3 span {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #40b449;
+    font-family: "Cera GR Bold";
+    margin-top: 10px;
+}
+
+footer{
+    position:relative;
+    margin-left:250px;
+    bottom:0;
+    color:white;
+    border:1px solid white;    
+    transition: all 0.3s;
+}
+
+.footer.active{
+	margin-left:80px;
+}
+
+footer #credit{
+    position: absolute;
+    bottom:0;
+    margin-left:10px;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 110px 10px 100px 10px;
+    transition: all 0.3s;
+}
+
+
+.tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 6px;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -86px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space:nowrap;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+button.btn:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*
+Custom Code
+*/
+
+.check{
+    padding-left:20px;
+}
+
+.regismail{
+	display:inline-block;
+	width:100px;
+	line-height: 30px;
+	background-color:#bb8f2e;
+	color:#231f20;
+}
